@@ -1,0 +1,36 @@
+1. 프로젝트 생성
+> mkdir homework
+> cd homework
+> npm init
+
+2. 필요한 패키지 설치
+> npm i mysql2 express nodemon
+    (or package.json파일 복사 붙여놓기 후 >npm i)
+
+3. app.js 뚝딱뚝딱
+    const app = express();
+    app.use();      //미들웨어 : body-parser, json, 라우터 등록
+    app.listen();
+
+4. mysql 폴더 / pool.js생성 >> 묘둘화(connection pool 생성, db쿼리 처리)
+
+5. mysql 폴더 / board.js    >> board관련 sql쿼리문  == mybatis.xml
+    -> pool.js에 등록
+        const boardSql = require("./board.js");
+        const sql = {..boardSql};
+
+6. routes 폴더 / board.js   >> board관련 라우팅     == command핸들러
+    -> app.js 파일에 라우터 등록
+        app.use("/board", boardRouter);
+
+7. 부메랑 테스트
+
+table 생성
+테이블 명 : board
+seq,            --게시글번호
+title,          --제목
+content,        --내용
+wet,            --작성일자
+writer          --작성자
+
+insert into board(title, wdt) values( 변수, now());

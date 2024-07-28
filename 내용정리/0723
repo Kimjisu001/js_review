@@ -1,0 +1,45 @@
+2일차 정리
+-------------------------------------------------------------------------------------------------
+node : javascript 실행환경
+        -> 예시 : 웹서버 구축
+            http모듈 -> express 프레임워크
+            servlet  -> spring 프레임워크
+
+            NodeJS                                                  JAVA
+npm                                                     maven 
+    package.json                                            pom.xml
+        - 프로젝트정보
+        - 설치된 패키지 정보
+            dependency
+        - 스크립트 명령어
+    npm install
+        - package.json에 있는 모든 패키지 설치
+    npm install 패키지명    (지정 패키지 다운)
+    npm uninstall 패키지명  (지정 패키지 삭제)
+    npm update 패키지명     (지정 패키지 업데이트)
+    npm ls                  (모든 패키지 보기)
+
+내장모듈                                                내장
+    - fs                                                    - File
+    - process(argv, env)                                    - System
+    - url                                                   - URL
+    - http모듈                                              - tomcat / jboss / rejin ...
+
+외장모듈
+    npm 설치 후에 사용 가능
+    - axios, express
+
+
+
+실습
+1. axios_test 폴더 생성
+2. package.json 파일 생성
+3. axios 패키지 설치
+4. index.js 파일 생성
+5. fetch함수를 axios 함수로 코딩
+6. node index.js
+
+-----------------------------------------------------------------------------------------------------
+용어 숙제
+1.  WAS vs WebServer
+2.  Library vs FrameWork

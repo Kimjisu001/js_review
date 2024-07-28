@@ -1,0 +1,63 @@
+##라우팅
+ - 클라이언트 요청에 응답하는 방법을 결정
+ - method 구분해서 응답
+ - app.메서드('패스', 핸들러(req, res){} )
+ - app.route() : 라우터 메소드를 한곳에서 작성
+ - express.Router() : 파일을 분리해서 구현
+
+app.get("/users", (req, res) => {
+  res.send("hello user!!");
+});
+
+app.route("/users")
+  .get((req, res) => {  res.send("user get");  })
+  .post((req, res) => { res.send("user post");  })
+
+
+
+
+
+1. product.js
+2. require()
+3. app.use("/product", productRouter);
+
+## procuct.js 파일 수정 ( req.body, req.params, req.query )
+
+전체조회  get    /product?category=t1&price=20000
+
+단건조회  get    /product/1
+
+등록     post  /product
+          json 형식으로 파라미터 전송 : prodid, prodname, price
+
+수정     put   /product/1
+          json 형식으로 파라미터 전송 : prodname, price
+
+삭제    delete /product/1
+
+
+restful                                기존방식
+----------------------------------------------------------
+Read   GET	/posts?                  
+Create POST	/posts
+       GET	/posts/1              /postsInfo?id=1
+Update PUT	/posts/1              /postsUpdate?id=1
+Delete DELETE	/posts/1              /postsDelete?id=1  
+
+path에는 처리하고자 자원명만 적고 무엇을(CRUD) 할지는 메서드로 구분
+
+
+http://localhost:3000/login?email=a.a@a&pw=1111
+
+
+ const  email = req.body.email; 
+
+
+
+
+
+용어
+-----------------------------------------------------------------------------------------
+forward vs redirect
+session vs cookie => session : server, cookie : browser
+
