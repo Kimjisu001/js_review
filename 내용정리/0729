@@ -1,0 +1,30 @@
+[오전]
+• 생성
+   npx create-react-app 프로젝트명
+   cd 프로젝터(폴더명)
+   pm serve 
+
+• 수정
+   index.js <--app.js
+   index.html
+
+• 배포
+   npm build
+   build
+     ㄴindex.html <--SPA(싱글페이지)
+     ㄴjs/        <--웹팩(package.json수정가능)
+     ㄴcss/
+
+[오후]
+• props
+• 컴포넌트(사용자정의태그)
+
+• if문 if (isPacked) {return <li className="item">{name} ✔</li>;}
+return <li className="item">{name}</li>;
+
+• 삼항연산자
+  return <li className="item">{isPacked ? name + " ✔" : name}</li>;
+
+• &&연산자
+  참고자료: https://ko.react.dev/learn/passing-props-to-a-component props
+  과제: https://ko.react.dev/learn/thinking-in-react

@@ -1,0 +1,26 @@
+[오전]
+hooks
+• useState(중요)
+• useEffect(중요)
+https://ko.react.dev/learn/synchronizing-with-effects
+
+[오후]
+D:\js_review\node-project>npm run dev 서버 실행
+D:\js_review\frontapp>npm start 화면 실행
+
+frontapp
+ㄴsrc
+ㄴCustomerUpdate.js
+ㄴCustomerList.js
+ㄴCustomerComponent.js
+ㄴEffectComponent.js
+
+[숙제]
+react
+ㄴ빠르게시작하기
+ㄴ자습서: Tic-Tac-Toe
+
+[참고자료]
+https://react-bootstrap.netlify.app/docs/layout/grid
+https://www.npmjs.com/package/react-bootstrap
+https://chrome.google.com/webstore/detail/boomerang-soap-rest-clien/eipdnjedkpcnlmmdfdkgfpljanehloah?hl=ko
