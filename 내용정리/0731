@@ -1,1 +1,37 @@
-******라우터
+******라우터*******
+[오전]
+• State
+https://ko.react.dev/learn/thinking-in-react (State 실습:검색 및 재고체크)
+https://ko.react.dev/learn/reacting-to-input-with-state (State 실습:State를 사용해 Input 다루기 )
+file:///D:/%EA%B5%90%EC%9E%AC/14_react/react_ppt/ReactJS02_%EC%83%81%ED%98%B8%EC%9E%91%EC%9A%A9.pdf (15페이지:ref)
+ file:///D:/%EA%B5%90%EC%9E%AC/14_react/react_ppt/ReactJS03_router.pdf(6페이지:router(라우터))교재:138p~147p
+frontapp
+   ㄴComp06_ProductStateComponemt(State 실습:검색 및 재고체크)
+   ㄴComp08_Form(Ref실습:input태그에 포커스 주기)
+   ㄴComp09_router(router,Link실습)
+
+   <금요일 시험>
+
+
+   frontapp
+   ㄴsrc
+     ㄴ src
+         ㄴBoardComponent.js(메인 : 라우터 연결) 
+         ㄴBoardList.js(전체조회)
+         ㄴBoardInfo.js(단건조회)
+         ㄴBoardInsert.js(등록)
+         ㄴBoardUpdate.js(수정)
+
+   node-project
+     ㄴmysql
+         ㄴpool.js(MySQL데이터베이스에 연결하기 위한 설정)
+         ㄴapp.js(포트 설정,라우터 설정,MySQL 연결 설정,미들웨어 적용,세션 관리 설정,라우터 연결,파일 업로드 엔드포인트 설정,서버 시작)
+         ㄴroutes
+            ㄴboard.js(데이터베이스에서 CRUD를 가져와 응답으로 보냄)
+
+   ㄴD:\js_review\node-project\routes\board.js
+   ㄴD:\js_review\node-project\app.js
+
+
+ReactJS02_상호작용
+   ㄴRef로 값 참조하기
